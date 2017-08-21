@@ -50,7 +50,7 @@ table {
 /* ----------- */
 
 body{
-  background-color: black;
+  background-color: #000000;
   transition: all 0.6s;
 }
 .wrap{
@@ -112,3 +112,7 @@ a{
   cursor: pointer;
   opacity: 0;
 }
+
+
+iframe { display: block;margin: 0 auto; background-color: #FFFFFF}
+
