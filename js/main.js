@@ -4,7 +4,7 @@ var el = document.querySelectorAll('.box');
 var cardNumber=el.length;//抓取卡片的張數
 var color=[];//同等卡片張數的顏色數量
 var ansCard = pickcard();//選到的答案
-
+console.log(ansCard);
 var el2 = document.querySelector('h1');
 var el3 = document.querySelector('p');
 var el4 = document.querySelector('body');
@@ -48,7 +48,7 @@ function game(){
 
 
 function pickcard(){
-  return Math.floor( Math.random() * (el.length  + 1) ) ;
+  return Math.floor( Math.random() * (el.length) ) ;
   
 }
 
