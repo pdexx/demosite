@@ -46,7 +46,69 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-div{
-	width: 960px;
-	margin: 0 auto;
+
+/* ----------- */
+
+body{
+  background-color: black;
+  transition: all 0.6s;
+}
+.wrap{
+  max-width: 500px;
+  margin: 0 auto;
+}
+h1{
+  text-align: center;
+  margin: 1rem;
+  font-size: 3rem;
+  color:#fff;
+  font-weight: bold;
+  margin: 1rem auto;
+}
+P{
+  text-align: center;
+  margin: 1rem;
+  font-size: 1.5rem;
+  color:#fff;
+  margin: 1rem auto;
+}
+.wrap::after {
+content: '';
+display: block;
+clear: both;
+}
+.box{
+  /* min-width: 100px; */
+  width: 30%;
+  height: 0;
+  padding-bottom: 30%;
+  background-color: #fff;
+  float: left;
+  margin: 1.6%;
+  border-radius:20px;
+  transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  cursor: pointer;
+}
+#btnAgain{
+  display:block;
+  margin: 30px auto;
+}
+a{
+  font-size: 2.5rem;
+  width: 15rem; /* 給寬度 */
+  height: 5rem; /*給高度*/
+  display: block; /*將元素改為區塊 */
+  color:#606060; /* 字體顏色 */
+  background-color: #fff; /*按紐背景顏色 */
+  text-align: center; /*字體水平置中 */
+  line-height: 5rem; /*字體垂直置中(與設定高度同) */
+  text-decoration: none; /*連結去底線 */
+  border-radius:25px;
+  transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  cursor: pointer;
+  opacity: 0;
 }
