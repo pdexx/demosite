@@ -47,19 +47,20 @@ table {
 	border-spacing: 0;
 }
 
-/* ----------- */
+/* ------css reset----- */
 
 body{
   background-color: #000000;
   transition: all 0.6s;
 }
-.wrap, .button{
+.wrap {
   max-width: 500px;
   margin: 0 auto;
 }
-.button{
-  max-width: 20rem;
+.myButtonArea{
+  max-width: 400px;
   margin: 0 auto;
+  transition: all 0.6s;
 }
 
 h1{
@@ -97,7 +98,7 @@ clear: both;
   cursor: pointer;
 }
 #btnAgain{
-  margin: 2rem auto;
+  margin: 2rem 0.5rem;
   font-size: 2.5rem;
   width: auto; /* 給寬度 */
   padding: 1rem;
@@ -115,7 +116,7 @@ clear: both;
   opacity: 0;
 }
 
-#mode{
+#easyMode{
   margin: 2rem auto;
   font-size: 2.5rem;
   width: auto; /* 給寬度 */
@@ -123,13 +124,17 @@ clear: both;
   display: block; /*將元素改為區塊 */
   float: left;
   color:#606060; /* 字體顏色 */
+  background-color: #fff;
   text-align: center; /*字體水平置中 */
   text-decoration: none; /*連結去底線 */
-  border-radius:100%;
+  border-radius:25px;
   transition: all 0.6s;
   -webkit-transition: all 0.6s;
   -moz-transition: all 0.6s;
   cursor: pointer;
   opacity: 0;
+}
+.hardMode{
+  display: none;
 }
 

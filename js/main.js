@@ -2,15 +2,17 @@ window.onload = function () {
   var mode=0;
   var el = document.querySelectorAll('.box');
   var cardNumber;//= el.length;//抓取卡片的張數
-  if(mode===0){cardNumber=3;}//else if(){}else{}
+  if(mode===0){cardNumber=3;}else{cardNumber=6;}
   console.log(cardNumber);
   var color = [];//同等卡片張數的顏色數量
+  console.log(color);
   var ansCard = pickcard();//選到的答案
+  console.log(ansCard);
   var el2 = document.querySelector('h1');
   var el3 = document.querySelector('p');
   var el4 = document.querySelector('body');
   var el5 = document.querySelector('#btnAgain');
-  var el6 = document.querySelector('#mode');
+  var el6 = document.querySelector('#easyMode');
   el5.addEventListener('click', fadeOut);
   el5.addEventListener('click', function () { el6.style.opacity = 0; });
   el5.addEventListener('click', function () { el4.style.backgroundColor = 'black'; });
@@ -51,7 +53,7 @@ window.onload = function () {
 
 
   function pickcard() {
-    return Math.floor(Math.random() * (el.length));
+    return Math.floor(Math.random() * (cardNumber))  
 
   }
 
