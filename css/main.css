@@ -53,10 +53,15 @@ body{
   background-color: #000000;
   transition: all 0.6s;
 }
-.wrap{
+.wrap, .button{
   max-width: 500px;
   margin: 0 auto;
 }
+.button{
+  max-width: 20rem;
+  margin: 0 auto;
+}
+
 h1{
   text-align: center;
   margin: 1rem;
@@ -92,20 +97,35 @@ clear: both;
   cursor: pointer;
 }
 #btnAgain{
-  display:block;
-  margin: 30px auto;
-}
-a{
+  margin: 2rem auto;
   font-size: 2.5rem;
-  width: 15rem; /* 給寬度 */
-  height: 5rem; /*給高度*/
+  width: auto; /* 給寬度 */
+  padding: 1rem;
   display: block; /*將元素改為區塊 */
+  float: left;
   color:#606060; /* 字體顏色 */
   background-color: #fff; /*按紐背景顏色 */
   text-align: center; /*字體水平置中 */
-  line-height: 5rem; /*字體垂直置中(與設定高度同) */
   text-decoration: none; /*連結去底線 */
   border-radius:25px;
+  transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  cursor: pointer;
+  opacity: 0;
+}
+
+#mode{
+  margin: 2rem auto;
+  font-size: 2.5rem;
+  width: auto; /* 給寬度 */
+  padding: 1rem;
+  display: block; /*將元素改為區塊 */
+  float: left;
+  color:#606060; /* 字體顏色 */
+  text-align: center; /*字體水平置中 */
+  text-decoration: none; /*連結去底線 */
+  border-radius:100%;
   transition: all 0.6s;
   -webkit-transition: all 0.6s;
   -moz-transition: all 0.6s;
