@@ -12,7 +12,7 @@ window.onload = function () {
   var el3 = document.querySelector('p');
   var el4 = document.querySelector('body');
   var el5 = document.querySelector('#btnAgain');
-  var el6 = document.querySelector('#easyMode');
+  var el6 = document.querySelectorAll('.mode');
   el5.addEventListener('click', fadeOut);
   el5.addEventListener('click', function () { el6.style.opacity = 0; });
   el5.addEventListener('click', function () { el4.style.backgroundColor = 'black'; });
@@ -28,13 +28,14 @@ window.onload = function () {
 
 
 
-  function fadeOut() {
+  function fadeOut() {//該元素淡出
     this.style.opacity = 0;
     this.style.cursor = 'default';
   }
+  
 
 
-  function game() {
+  function game() {//遊戲主體
     if (this.style.backgroundColor === el[ansCard].style.backgroundColor) {
       el3.textContent = 'CORRECT!!!';
       el4.style.backgroundColor = this.style.backgroundColor;
@@ -44,7 +45,7 @@ window.onload = function () {
         el[i].style.backgroundColor = "#fff";
         el[i].style.opacity = 1;
         el5.style.opacity = 1;
-        el6.style.opacity = 1;
+        //el6.style.opacity = 1;
       }
     } else {
       el3.textContent = 'TRY ANOTHER COLOR';

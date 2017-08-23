@@ -116,7 +116,7 @@ clear: both;
   opacity: 0;
 }
 
-#easyMode{
+.mode{
   margin: 2rem auto;
   font-size: 2.5rem;
   width: auto; /* 給寬度 */
